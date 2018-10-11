@@ -1,6 +1,6 @@
 {
   "name": "async-ware",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A class for easily writing js middlewares",
   "keywords": [
     "koa",
