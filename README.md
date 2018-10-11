@@ -1,10 +1,20 @@
 # Middleware
 A class for easily writing js middlewares
 
+## Features
+
+- [x] support async/await function
+- [x] any args for middleware
+- [x] catch the error by `ware.run()` 's promise
+
 ## how to use
 
+```
+npm i async-ware -S
+```
+
 ```js
-import Middleware from 'Middleware'
+const Middleware = require('async-ware')
 
 const ware = new Middleware()
 
@@ -33,12 +43,6 @@ ware.use(async (a, b, next) => {
 
 ware.run({a: 10}, {b: 20}).then().catch(err => console.log(err))
 ```
-
-## Features
-
-- [x] support async/await function
-- [x] any args for middleware
-- [x] catch the error by `ware.run()` 's promise
 
 ## caveats
 
