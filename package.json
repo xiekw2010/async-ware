@@ -1,16 +1,15 @@
 {
   "name": "async-ware",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A class for easily writing js middlewares",
   "keywords": [
-    "koa",
     "middleware",
-    "compose"
+    "async",
+    "class",
+    "koa",
+    "variadic"
   ],
-  "main": "dist/lib/index.js",
   "scripts": {
-    "dev": "babel src -w --out-dir ./dist",
-    "build": "rm -rf dist & babel src --out-dir ./dist",
     "test": "NODE_ENV=test mocha test/unit/**/*.test.js",
     "coverage": "nyc --reporter=html --reporter=text mocha test/unit/**/*.test.js",
     "report-coverage": "npm run coverage && nyc report --reporter=text-lcov > coverage.lcov && codecov",

@@ -1,30 +1,32 @@
-# Middleware
+# async-ware
 
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
 [![License][license-image]][license-url]
 
-A class for easily writing js middlewares
+A class for easily writing js middlewares with variadic arguments
 
 ## Features
 
 - [x] support async/await function
-- [x] any args for middleware
+- [x] variadic arguments for the whole running
 - [x] catch the error by `ware.run()` 's promise
 
-## how to use
+## How to use
 
+### Install
 ```
 npm i async-ware -S
 ```
+
+### Example
 
 ```js
 const Middleware = require('async-ware')
 
 const ware = new Middleware()
 
-const ware = new Ware()
 ware.use(async (a, b, next) => {
   console.log('middleware 1a ***', ++a.a, a)
   await next()
@@ -47,8 +49,13 @@ ware.use(async (a, b, next) => {
   console.log('middleware 3b ***', ++b.b, b)
 })
 
-ware.run({a: 10}, {b: 20}).then().catch(err => console.log(err))
+// The middlewares above, function's arguments a and b is the `run` function's arguments
+// You can use variadic arguments here
+ware.run({ a: 10 }, { b: 20 })
+  .then(console.log)
+  .catch(console.error)
 ```
+
 
 ## caveats
 
