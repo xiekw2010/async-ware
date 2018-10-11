@@ -13,6 +13,7 @@
     "build": "rm -rf dist & babel src --out-dir ./dist",
     "test": "NODE_ENV=test mocha test/unit/**/*.test.js",
     "coverage": "nyc --reporter=html --reporter=text mocha test/unit/**/*.test.js",
+    "report-coverage": "npm run coverage && nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "lint": "eslint --fix --ext .js src --ignore-pattern *.min.js"
   },
   "repository": {

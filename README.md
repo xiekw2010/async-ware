@@ -60,7 +60,7 @@ The `this` context is not supported by `Middleware` to pass, instead, pass it as
 
 [npm-image]: https://img.shields.io/npm/v/async-ware.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/async-ware
-[travis-image]: https://img.shields.io/travis/xiekw2010/async-ware/next.svg?style=flat-square
+[travis-image]: https://travis-ci.org/xiekw2010/async-ware.svg?branch=master
 [travis-url]: https://travis-ci.org/xiekw2010/async-ware
 [codecov-image]: https://img.shields.io/codecov/c/github/xiekw2010/async-ware/next.svg?style=flat-square
 [codecov-url]: https://codecov.io/github/xiekw2010/async-ware

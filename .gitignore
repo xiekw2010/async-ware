@@ -63,3 +63,5 @@ dist
 # IDE
 .vscode
 .idea
+
+coverage.lcov
