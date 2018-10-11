@@ -29,9 +29,10 @@
   },
   "homepage": "https://github.com/xiekw2010/Middleware#readme",
   "devDependencies": {
-    "mocha": "^4.1.0",
-    "ramda": "^0.25.0",
+    "codecov": "^3.1.0",
     "eslint": "^4.14.0",
-    "eslint-config-antife": "^1.0.0"
+    "eslint-config-antife": "^1.0.0",
+    "mocha": "^4.1.0",
+    "ramda": "^0.25.0"
   }
 }

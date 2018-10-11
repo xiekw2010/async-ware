@@ -1,4 +1,10 @@
 # Middleware
+
+[![NPM version][npm-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+[![Test coverage][codecov-image]][codecov-url]
+[![License][license-image]][license-url]
+
 A class for easily writing js middlewares
 
 ## Features
@@ -47,3 +53,16 @@ ware.run({a: 10}, {b: 20}).then().catch(err => console.log(err))
 ## caveats
 
 The `this` context is not supported by `Middleware` to pass, instead, pass it as an argument in the middleware function's params.
+
+## License
+
+  MIT
+
+[npm-image]: https://img.shields.io/npm/v/async-ware.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/async-ware
+[travis-image]: https://img.shields.io/travis/xiekw2010/async-ware/next.svg?style=flat-square
+[travis-url]: https://travis-ci.org/xiekw2010/async-ware
+[codecov-image]: https://img.shields.io/codecov/c/github/xiekw2010/async-ware/next.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/xiekw2010/async-ware
+[license-image]: http://img.shields.io/npm/l/async-ware.svg?style=flat-square
+[license-url]: LICENSE
