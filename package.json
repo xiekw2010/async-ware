@@ -1,14 +1,17 @@
 {
   "name": "async-ware",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "A class for easily writing js middlewares",
   "keywords": [
     "middleware",
     "async",
     "class",
     "koa",
-    "variadic"
+    "variadic",
+    "arguments"
   ],
+  "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "test": "NODE_ENV=test mocha test/unit/**/*.test.js",
     "coverage": "nyc --reporter=html --reporter=text mocha test/unit/**/*.test.js",
@@ -20,7 +23,8 @@
     "url": "git+https://github.com/xiekw2010/Middleware.git"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "author": "",
   "license": "MIT",
