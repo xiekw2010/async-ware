@@ -5,13 +5,13 @@
 [![Test coverage][codecov-image]][codecov-url]
 [![License][license-image]][license-url]
 
-A class for easily writing js middlewares with variadic arguments
+The programming idea(🧅 onion model) of koa middleware is great, it can be applied to more situations.
 
-## Features
+We need one class to include that all, so here comes this lib
 
-- [x] support async/await function
-- [x] variadic arguments for the whole running
-- [x] catch the error by `ware.run()` 's promise
+- ✅ use it in one class(no need to include koa), see code example below
+- ✅ variadic arguments for the whole running
+- ✅ catch the error by `ware.run()` 's promise
 
 ## How to use
 
@@ -55,11 +55,6 @@ ware.run({ a: 10 }, { b: 20 })
   .then(console.log)
   .catch(console.error)
 ```
-
-
-## caveats
-
-The `this` context is not supported by `Middleware` to pass, instead, pass it as an argument in the middleware function's params.
 
 ## License
 
